@@ -158,16 +158,6 @@ ul li {
 
 }
 
-.burger__show {
-    display: none;
-}
-
-.responsive {
-    width: 100%;
-    background: rgba(19, 18, 18, 0.9);
-    margin-top: 250px;
-    justify-content: center;
-}
 
 @media (max-width:850px) {
 

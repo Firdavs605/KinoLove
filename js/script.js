@@ -1,29 +1,5 @@
 
 
-const burger = document.querySelector('.header__burger');
- const list = document.querySelector('.header__list');
-
-     list.classList.add('burger__show');  
-     burger.onclick = function() {
-         list.classList.toggle('burger__show');
-     }
-
-
-
-
-
-const btn = document.querySelector('.btn');
-const dropContent = document.querySelector('.drop_content');
-
-
-dropContent.classList.add('act');
-
-btn.onclick = function() {
-    
-    dropContent.classList.toggle('act');
-}        
-
-
 
 
 
@@ -130,7 +106,7 @@ class SLIDER {
 const slider = new SLIDER({
     slider: '.first-slider',
     direction: 'x',
-    time: 1000,
+    time: 700,
     autoplay: true,
     interval: 4000,
     height: 600,
