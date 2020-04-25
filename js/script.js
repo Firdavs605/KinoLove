@@ -1,7 +1,41 @@
 
+const btn43 = document.querySelector('.main-tabs__link-rec');
+const btn2 = document.querySelector('.main-tabs__link-filter');
+const btn3 = document.querySelector('.main-tabs__link-save');
+
+const recContent = document.querySelector('#recomendation');
+const filterContent = document.querySelector('#filter');
+const SaveContent = document.querySelector('#saveVideos');
+
+
+btn43.onclick = function() {
+    btn43.classList.add('active');
+    btn2.classList.remove('active');    
+    btn3.classList.remove('active');
+    recContent.style.display = 'block';
+    filterContent.style.display = 'none';
+    SaveContent.style.display = 'none';
+}
+
+btn2.onclick = function() {
+    btn2.classList.add('active');
+    btn43.classList.remove('active');    
+    btn3.classList.remove('active');
+    filterContent.style.display = 'block';
+    recContent.style.display = 'none';
+    SaveContent.style.display = 'none';
+}
 
 
 
+
+// btn3.onclick = function() {
+//     bt2.classList.remove('active');
+//     bt43.classList.remove('active');
+//     btn3.classList.add('active');
+//     filterContent.style.display = 'none';
+//     SaveContent.classList.add('tabs__content-3');
+// }
 
 
 class SLIDER {
