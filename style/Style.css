@@ -1,6 +1,11 @@
 @import 'fonts.css';
 
 
+:root{
+    --txtColor: #ff2828;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -48,7 +53,8 @@ ul li a, .reg,.btn  {
 }
 
 ul li a:hover {
-    color: white;
+    color: var(--txtColor);
+    top: 20px;
 }
 
 ul li {
@@ -90,7 +96,8 @@ ul li {
 }
 
 .link:hover {
-    color: #b80505;
+    color: var(--txtColor);
+    
 }
 
 .header__burger {
@@ -219,6 +226,10 @@ ul li {
 
 
 .main-tabs__content-3 {
+    display: none;
+}
+
+.main-tabs__content-2 {
     display: none;
 }
 

@@ -8,7 +8,8 @@ const filterContent = document.querySelector('#filter');
 const SaveContent = document.querySelector('#saveVideos');
 
 
-btn43.onclick = function() {
+btn43.onclick = function(event) {
+    event.preventDefault();
     btn43.classList.add('active');
     btn2.classList.remove('active');    
     btn3.classList.remove('active');
@@ -17,11 +18,12 @@ btn43.onclick = function() {
     SaveContent.style.display = 'none';
 }
 
-btn2.onclick = function() {
+btn2.onclick = function(event) {
+    event.preventDefault();
     btn2.classList.add('active');
     btn43.classList.remove('active');    
     btn3.classList.remove('active');
-    filterContent.style.display = 'block';
+    filterContent.style = 'display:block;';
     recContent.style.display = 'none';
     SaveContent.style.display = 'none';
 }
@@ -29,13 +31,15 @@ btn2.onclick = function() {
 
 
 
-// btn3.onclick = function() {
-//     bt2.classList.remove('active');
-//     bt43.classList.remove('active');
-//     btn3.classList.add('active');
-//     filterContent.style.display = 'none';
-//     SaveContent.classList.add('tabs__content-3');
-// }
+ btn3.onclick = function(event) {
+    event.preventDefault();
+    btn3.classList.add('active');
+    btn43.classList.remove('active');    
+    btn2.classList.remove('active');
+    SaveContent.style.display = 'block';
+    recContent.style.display = 'none';
+    filterContent.style.display = 'none';
+ }
 
 
 class SLIDER {
