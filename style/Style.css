@@ -2,7 +2,7 @@
 
 
 :root{
-    --txtColor: #ff2828;
+    --txtColor: #6db53e;
 }
 
 
@@ -13,8 +13,10 @@
 }
 
 body {
-    background: #151615;
+    background: #211e1f;
     list-style:none;
+    width: 100%;
+
 }
 
 header {
@@ -29,7 +31,7 @@ header {
     width: 100%;
     top: 0;
     left: 0;
-    background: rgba(19, 18, 18, 0.9);
+    background: rgba(14, 12, 13, 0.9);
     position: fixed;
     display: flex;
     align-items: center;
@@ -52,10 +54,14 @@ ul li a, .reg,.btn  {
     transition: 0.6s;
 }
 
-ul li a:hover {
+ ul li a:hover {
     color: var(--txtColor);
-    top: 20px;
 }
+
+.reg:hover {
+    color: var(--txtColor);
+}
+
 
 ul li {
     margin: 0 45px 0 0;
@@ -70,12 +76,15 @@ ul li {
 
 .header-list__link {
     display: flex;
+    align-items: center;
 }
 
 .nav-link__span {
-    margin-left: 11px;
-    font-size: 25px;
+    margin-right: 11px;
+    font-size: 17px;
+    align-items: center;
 }
+
 
 .act {
     display: none;
@@ -198,19 +207,19 @@ ul li {
 
 
 .main-tabs__link-save:hover {
-    border-bottom: 4px solid #cc0b0b;
+    border-bottom: 4px solid var(--txtColor);
     padding-bottom: 12px;
     border-radius: 7px;
 }
 
 .main-tabs__link-filter:hover {
-    border-bottom: 4px solid #cc0b0b;
+    border-bottom: 4px solid var(--txtColor);
     padding-bottom: 12px;
     border-radius: 7px;
 }
 
 .active {
-    border-bottom: 4px solid #cc0b0b;
+    border-bottom: 4px solid var(--txtColor);
     padding-bottom: 12px;
     border-radius: 7px;
 }
@@ -248,7 +257,7 @@ ul li {
     display: block;
     max-width: 1315px;
     width: 100%;
-    background: red;
+    background: var(--txtColor);
     height: 2px;
     margin-left: 20px;
     margin-top: -30px;
