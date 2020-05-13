@@ -37,6 +37,7 @@ header {
     align-items: center;
     z-index: 999;
     height: 65px;
+
 }
 
 ul {
@@ -448,6 +449,13 @@ ul li {
     border: 2px solid #558b30;
 }
 
+
+@media (max-width:1440px) {
+    .footer {
+        width: 1440px;
+    }
+}
+
 @media (max-width:1340px) {
     
     .main-tabs__line::after {
@@ -495,6 +503,8 @@ ul li {
     .main-tabs__description {
         font-size: 30px;
     }
+
+       
 }
 
 @media (max-width:997px) {
@@ -525,6 +535,17 @@ ul li {
 
     ul, .reg, .btn {
        display: none; 
+       margin-top: 300px;
+    }
+
+
+    .footer__content {
+        flex-direction: column;
+    }
+
+    .footer__subs {
+        margin:-70px 0 0 0 ;
+        text-align: center;
     }
 
 }
@@ -557,7 +578,10 @@ ul li {
     .main-tabs__content {
         margin-left: 50px;
     }
+
+
 }
+
 
 @media (max-width:510px) {
 
