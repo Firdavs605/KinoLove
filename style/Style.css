@@ -544,8 +544,42 @@ ul li {
     }
 
     .footer__subs {
-        margin:-70px 0 0 0 ;
+        margin:-200px 0 0 0 ;
         text-align: center;
+    }
+
+    .footer-content__social a {
+        padding: 20px 40px;
+        font-size: 37px;
+    }
+    
+    .footer__logo {
+        width: 800px;
+    }
+
+    .footer-content__title {
+        font-size: 67px;
+    }
+
+    .footer__email {
+        margin-top: 70px;
+        padding:32px 20px;
+        width: 700px;
+        font-size: 37px;
+    }
+
+    .footer-content__social {
+        margin: 50px auto;
+    }
+
+
+    .footer-content__social a {
+        font-size: 67px;
+    }
+
+    .footer-content__link {
+        padding: 30px 48px;
+        font-size: 41px;
     }
 
 }
