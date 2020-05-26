@@ -100,6 +100,8 @@ class SLIDER {
                 }, this.interval)
             })
         }
+
+        window.addEventListener('resize', () => this.SLIDER())
     }
     move(btn) {
         this.next.disabled = true
@@ -141,8 +143,8 @@ class SLIDER {
     }
 
     RespSlider() {
-        this.width = 500;
-        this.height = 300;
+        options.width = 500;
+        options.height = 300;
     }
 }
 
@@ -164,4 +166,3 @@ const slideLast = new SLIDER({
 })
 
 
-window.addEventListener('resize', () => RespSlider());
